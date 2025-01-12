@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnetic Button</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .magneto {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            border: none;
+            background-color: #15151e;
+            color: #C4BCB3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="bg-[#C4BCB3] text-white">
+
+    <!-- Main Container -->
+    <div class="flex flex-col items-center justify-center h-screen">
+        <!-- Title -->
+        <h1 class="text-4xl font-bold mb-12 text-[#15151e]">Magnetic Button</h1>
+        <!-- Button -->
+        <div class="mt-6 mb-2" id="about-button">
+            <div>
+              <button class="magneto">
+                <span class="text">Hover me</span>
+              </button>
+              <div class="mt-10 bg-gray-500 p-5" id="debugger"></div>
+            </div>
+          </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
